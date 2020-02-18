@@ -3,10 +3,7 @@
 
 # In[12]:
 S=list(range(255)) 
-print("ingrese la llave:")
 key=input() #llave 
-print("ingrese el teto a crifrar:")
-
 plaintext=input() #texto a cifrar
 len_text=len(plaintext)#tamaño del texto a cifrar
 mod_key=len(key) #tamaño de la llave
