@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # In[12]:
-S=list(range(255)) 
+S=list(range(256)) 
 key=input() #llave 
 plaintext=input() #texto a cifrar
 len_text=len(plaintext)#tamaño del texto a cifrar
