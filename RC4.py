@@ -4,6 +4,7 @@
 # In[12]:
 
 
+
 S=list(range(255)) 
 print("ingrese la llave:")
 key=input() #llave 
