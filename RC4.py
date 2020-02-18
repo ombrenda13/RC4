@@ -13,13 +13,13 @@ text=list(plaintext)# string de texto a cifrar convertido en lista
 for i in range (0,mod_key):
     llave[i]=ord(llave[i]) #convertir los caracteres de la llave en valores ASCII
     
-for i in range (0,255):
+for i in range (0,256):
     S.append(i) 
 
 j=0
 
 # Key-scheduling algorithm (KSA)
-for i in range (0,255):
+for i in range (0,256):
     j=(j + S[i] + llave[i%mod_key])%256 
     tempo=S[i]
     S[i]=S[j]
