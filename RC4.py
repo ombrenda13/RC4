@@ -2,9 +2,6 @@
 # coding: utf-8
 
 # In[12]:
-
-
-
 S=list(range(255)) 
 print("ingrese la llave:")
 key=input() #llave 
@@ -44,8 +41,8 @@ for h in range(0,len_text):
     S[j]=tempo
     k=S[(S[i]+S[j])%256]^ord(text[h]) #XOR 
     encripted.append(format(k, '02x'))#convertir k en hex 
-    
-print(string.join(encripted))
-    
+    #print(format(k, '02x'))
+string=string.join(encripted)
+print(string.upper())    
 
 
